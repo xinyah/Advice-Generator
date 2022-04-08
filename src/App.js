@@ -23,12 +23,16 @@ function App() {
 
 	return (
 		<div class="advice-box">
-			<p>Advice #{adviceNum}</p>
-			<p>"{advice}"</p>
-			<img class="first-image" src={lowerBanner} alt="deco" />
-			<div class="second-image" onClick={getNewAdvice}>
-				<img src={buttonImg} alt="dice" />
-			</div>
+			{adviceNum !== -1 && (
+				<>
+					<p>Advice #{adviceNum}</p>
+					<p>"{advice}"</p>
+					<img class="first-image" src={lowerBanner} alt="deco" />
+					<div class="second-image" onClick={getNewAdvice}>
+						<img src={buttonImg} alt="dice" />
+					</div>
+				</>
+			)}
 		</div>
 	);
 }
