@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Advice-Generator/static/css/main.8b700e0e.css",
+    "main.css": "/Advice-Generator/static/css/main.087cd4b2.css",
     "main.js": "/Advice-Generator/static/js/main.15e4b28d.js",
     "static/js/787.766111b2.chunk.js": "/Advice-Generator/static/js/787.766111b2.chunk.js",
     "index.html": "/Advice-Generator/index.html",
     "static/media/icon-dice.svg": "/Advice-Generator/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
     "static/media/pattern-divider-desktop.svg": "/Advice-Generator/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
-    "main.8b700e0e.css.map": "/Advice-Generator/static/css/main.8b700e0e.css.map",
+    "main.087cd4b2.css.map": "/Advice-Generator/static/css/main.087cd4b2.css.map",
     "main.15e4b28d.js.map": "/Advice-Generator/static/js/main.15e4b28d.js.map",
     "787.766111b2.chunk.js.map": "/Advice-Generator/static/js/787.766111b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b700e0e.css",
+    "static/css/main.087cd4b2.css",
     "static/js/main.15e4b28d.js"
   ]
 }
