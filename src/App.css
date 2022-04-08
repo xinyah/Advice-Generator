@@ -76,10 +76,95 @@
 
 .second-image:hover {
 	cursor: pointer;
+	box-shadow: 0 0 12px 0px #53ffaa;
 }
 
 .second-image img {
 	position: absolute;
 	top: 12px;
 	left: 12px;
+}
+
+@media screen and (max-width: 550px) {
+	.advice-box {
+		position: relative;
+		width: 343px;
+		height: 347px;
+		margin-top: calc((100vh - 347px) / 2);
+		margin-left: calc((100vw - 343px) / 2);
+		background-color: #313a48;
+		border-radius: 15px;
+		box-shadow: 30px 50px 80px rbga(0, 0, 0, 0, 100202);
+	}
+
+	.advice-box p:first-child {
+		position: absolute;
+		height: 15px;
+		left: 34.69%;
+		right: 34.99%;
+		top: calc(50% - 15px / 2 - 126px);
+
+		font-family: "Manrope";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 11px;
+		line-height: 15px;
+		/* identical to box height */
+
+		text-align: center;
+		letter-spacing: 3.45714px;
+
+		/* Neon Green */
+
+		color: #53ffaa;
+	}
+
+	.advice-box p:last-child {
+		position: absolute;
+		left: 7%;
+		right: 7%;
+		top: 22.77%;
+		bottom: 39.19%;
+
+		font-family: "Manrope";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 33px;
+		text-align: center;
+		letter-spacing: -0.257143px;
+
+		/* Light Cyan */
+
+		color: #cee3e9;
+	}
+
+	.first-image {
+		position: absolute;
+		max-width: 295px;
+		height: 16px;
+		margin-left: -20px;
+		top: 284px;
+	}
+
+	.second-image {
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		margin-left: -95px;
+		top: 335px;
+		background-color: #53ffaa;
+		border-radius: 50%;
+	}
+
+	.second-image:hover {
+		cursor: pointer;
+		box-shadow: 0 0 12px 0px #53ffaa;
+	}
+
+	.second-image img {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+	}
 }
