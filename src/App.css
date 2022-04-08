@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.advice-box {
+	position: absolute;
+	width: 540px;
+	height: 364px;
+	margin-top: calc((100vh - 364px) / 2);
+	margin-left: calc((100vw - 540px) / 2);
+	background-color: #313a48;
+	border-radius: 15px;
+	box-shadow: 30px 50px 80px rbga(0, 0, 0, 0, 100202);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.advice-box p:first-child {
+	position: absolute;
+	height: 18px;
+	left: 38.61%;
+	right: 38.8%;
+	top: calc(50% - 18px / 2 - 125px);
+
+	/* Heading */
+
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 18px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 4.08571px;
+
+	/* Neon Green */
+
+	color: #53ffaa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.advice-box p:nth-child(2) {
+	/* “It is easy to sit u */
+
+	position: absolute;
+	left: 8.89%;
+	right: 8.89%;
+	top: 27.73%;
+	bottom: 43.96%;
+
+	/* Quote */
+
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: -0.3px;
+
+	/* Light Cyan */
+
+	color: #cee3e9;
+}
+.first-image {
+	position: absolute;
+	width: 444px;
+	height: 16px;
+	left: 48px;
+	top: 284px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.second-image {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	left: 246px;
+	top: 335px;
+	background-color: #53ffaa;
+	border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.second-image:hover {
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second-image img {
+	position: absolute;
+	top: 12px;
+	left: 12px;
 }
