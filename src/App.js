@@ -24,16 +24,16 @@ function App() {
 	};
 
 	return (
-		<div class="advice-box">
+		<div class="center-flex">
 			{adviceNum !== -1 && (
-				<>
+				<div class="flex-item">
 					<p>Advice #{adviceNum}</p>
 					<p>"{advice}"</p>
 					<img class="first-image" src={lowerBanner} alt="deco" />
 					<div class="second-image" onClick={getNewAdvice}>
 						<img src={buttonImg} alt="dice" />
 					</div>
-				</>
+				</div>
 			)}
 		</div>
 	);

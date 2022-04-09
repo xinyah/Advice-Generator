@@ -1,49 +1,39 @@
-.advice-box {
-	position: absolute;
+.center-flex {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 360px;
 	width: 540px;
-	height: 364px;
-	margin-top: calc((100vh - 364px) / 2);
-	margin-left: calc((100vw - 540px) / 2);
 	background-color: #313a48;
 	border-radius: 15px;
 	box-shadow: 30px 50px 80px rbga(0, 0, 0, 0, 100202);
 }
 
-.advice-box p:first-child {
-	position: absolute;
-	height: 18px;
-	left: 38.61%;
-	right: 38.8%;
-	top: calc(50% - 18px / 2 - 125px);
-
-	/* Heading */
-
+.flex-item p:first-child {
+	position: fixed;
+	transform: translate(0, -150px);
 	font-family: "Manrope";
 	font-style: normal;
 	font-weight: 800;
 	font-size: 13px;
 	line-height: 18px;
-	/* identical to box height */
-
-	text-align: center;
 	letter-spacing: 4.08571px;
-
-	/* Neon Green */
-
+	margin-bottom: 5px;
 	color: #53ffaa;
 }
 
-.advice-box p:nth-child(2) {
-	/* “It is easy to sit u */
-
-	position: absolute;
-	left: 8.89%;
-	right: 8.89%;
-	top: 27.73%;
-	bottom: 43.96%;
-
-	/* Quote */
-
+.flex-item p:nth-child(2) {
+	position: relative;
+	color: aquamarine;
+	margin: 0 5vw 0 5vw;
 	font-family: "Manrope";
 	font-style: normal;
 	font-weight: 800;
@@ -51,120 +41,30 @@
 	line-height: 38px;
 	text-align: center;
 	letter-spacing: -0.3px;
-
-	/* Light Cyan */
-
 	color: #cee3e9;
 }
-.first-image {
-	position: absolute;
-	width: 444px;
-	height: 16px;
-	left: 48px;
-	top: 284px;
+
+.flex-item img:nth-child(3) {
+	position: fixed;
+	transform: translate(0px, 8vh);
 }
 
-.second-image {
-	position: absolute;
-	width: 48px;
+.flex-item div:nth-child(4) {
+	position: fixed;
 	height: 48px;
-	left: 246px;
-	top: 335px;
+	width: 48px;
+	transform: translate(0, 13.5vh);
 	background-color: #53ffaa;
 	border-radius: 50%;
 }
 
-.second-image:hover {
+.flex-item div:nth-child(4):hover {
 	cursor: pointer;
 	box-shadow: 0 0 12px 0px #53ffaa;
 }
 
-.second-image img {
-	position: absolute;
-	top: 12px;
+.flex-item div:nth-child(4) img {
+	position: relative;
 	left: 12px;
-}
-
-@media screen and (max-width: 550px) {
-	.advice-box {
-		position: relative;
-		width: 343px;
-		height: 347px;
-		margin-top: calc((100vh - 347px) / 2);
-		margin-left: calc((100vw - 343px) / 2);
-		background-color: #313a48;
-		border-radius: 15px;
-		box-shadow: 30px 50px 80px rbga(0, 0, 0, 0, 100202);
-	}
-
-	.advice-box p:first-child {
-		position: absolute;
-		height: 15px;
-		left: 34.69%;
-		right: 34.99%;
-		top: calc(50% - 15px / 2 - 126px);
-
-		font-family: "Manrope";
-		font-style: normal;
-		font-weight: 800;
-		font-size: 11px;
-		line-height: 15px;
-		/* identical to box height */
-
-		text-align: center;
-		letter-spacing: 3.45714px;
-
-		/* Neon Green */
-
-		color: #53ffaa;
-	}
-
-	.advice-box p:last-child {
-		position: absolute;
-		left: 7%;
-		right: 7%;
-		top: 22.77%;
-		bottom: 39.19%;
-
-		font-family: "Manrope";
-		font-style: normal;
-		font-weight: 800;
-		font-size: 24px;
-		line-height: 33px;
-		text-align: center;
-		letter-spacing: -0.257143px;
-
-		/* Light Cyan */
-
-		color: #cee3e9;
-	}
-
-	.first-image {
-		position: absolute;
-		max-width: 295px;
-		height: 16px;
-		margin-left: -20px;
-		top: 284px;
-	}
-
-	.second-image {
-		position: absolute;
-		width: 48px;
-		height: 48px;
-		margin-left: -95px;
-		top: 335px;
-		background-color: #53ffaa;
-		border-radius: 50%;
-	}
-
-	.second-image:hover {
-		cursor: pointer;
-		box-shadow: 0 0 12px 0px #53ffaa;
-	}
-
-	.second-image img {
-		position: absolute;
-		top: 12px;
-		left: 12px;
-	}
+	top: 12px;
 }
