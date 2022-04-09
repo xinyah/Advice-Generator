@@ -19,20 +19,19 @@
 
 .flex-item p:first-child {
 	position: fixed;
-	transform: translate(0, -150px);
+	transform: translate(0, -120px);
 	font-family: "Manrope";
 	font-style: normal;
 	font-weight: 800;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 15px;
 	letter-spacing: 4.08571px;
-	margin-bottom: 5px;
 	color: #53ffaa;
 }
 
 .flex-item p:nth-child(2) {
 	position: relative;
-	color: aquamarine;
+	transform: translate(0, -10px);
 	margin: 0 5vw 0 5vw;
 	font-family: "Manrope";
 	font-style: normal;
@@ -46,14 +45,14 @@
 
 .flex-item img:nth-child(3) {
 	position: fixed;
-	transform: translate(0px, 8vh);
+	transform: translate(0px, 9vh);
 }
 
 .flex-item div:nth-child(4) {
 	position: fixed;
 	height: 48px;
 	width: 48px;
-	transform: translate(0, 13.5vh);
+	transform: translate(0, 13.75vh);
 	background-color: #53ffaa;
 	border-radius: 50%;
 }
