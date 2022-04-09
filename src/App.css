@@ -63,3 +63,14 @@
 	left: 12px;
 	top: 12px;
 }
+
+@media screen and (max-width: 550px) {
+	.flex-item {
+		height: 343px;
+		width: 347px;
+	}
+
+	.first-image {
+		width: 295px;
+	}
+}
