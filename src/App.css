@@ -31,7 +31,7 @@
 
 .flex-item p:nth-child(2) {
 	position: relative;
-	transform: translate(0, -10px);
+	transform: translate(0, 100px);
 	margin: 0 5vw 0 5vw;
 	font-family: "Manrope";
 	font-style: normal;
@@ -40,29 +40,25 @@
 	line-height: 38px;
 	text-align: center;
 	letter-spacing: -0.3px;
+	height: 300px;
 	color: #cee3e9;
 }
 
-.flex-item img:nth-child(3) {
-	position: fixed;
-	transform: translate(0px, 9vh);
-}
-
-.flex-item div:nth-child(4) {
-	position: fixed;
+.second-image {
+	position: relative;
 	height: 48px;
 	width: 48px;
-	transform: translate(0, 13.75vh);
+	transform: translate(0, 20px);
 	background-color: #53ffaa;
 	border-radius: 50%;
 }
 
-.flex-item div:nth-child(4):hover {
+.second-image:hover {
 	cursor: pointer;
 	box-shadow: 0 0 12px 0px #53ffaa;
 }
 
-.flex-item div:nth-child(4) img {
+.second-image img {
 	position: relative;
 	left: 12px;
 	top: 12px;
