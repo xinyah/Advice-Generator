@@ -20,7 +20,7 @@ function App() {
 					setAdvice(result.slip.advice);
 					console.log(result.slip);
 				});
-		} while (advice.length > 130);
+		} while (advice.length > 80);
 	};
 
 	return (
