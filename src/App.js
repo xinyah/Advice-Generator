@@ -9,16 +9,18 @@ function App() {
 
 	useEffect(() => {
 		getNewAdvice();
-	}, []);
+	});
 
 	const getNewAdvice = () => {
-		fetch("https://api.adviceslip.com/advice")
-			.then((res) => res.json())
-			.then((result) => {
-				setAdviceNum(result.slip.id);
-				setAdvice(result.slip.advice);
-				console.log(result.slip);
-			});
+		do {
+			fetch("https://api.adviceslip.com/advice")
+				.then((res) => res.json())
+				.then((result) => {
+					setAdviceNum(result.slip.id);
+					setAdvice(result.slip.advice);
+					console.log(result.slip);
+				});
+		} while (advice.length > 150);
 	};
 
 	return (
