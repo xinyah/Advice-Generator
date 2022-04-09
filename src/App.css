@@ -31,7 +31,7 @@
 
 .flex-item p:nth-child(2) {
 	position: relative;
-	transform: translate(0, 100px);
+	transform: translate(0, 50px);
 	margin: 0 5vw 0 5vw;
 	font-family: "Manrope";
 	font-style: normal;
@@ -40,15 +40,23 @@
 	line-height: 38px;
 	text-align: center;
 	letter-spacing: -0.3px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	color: #cee3e9;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+.first-image {
+	position: relative;
+	transform: translate(0, 55px);
 }
 
 .second-image {
 	position: relative;
 	height: 48px;
 	width: 48px;
-	transform: translate(0, 20px);
+	transform: translate(0, 68px);
 	background-color: #53ffaa;
 	border-radius: 50%;
 }
@@ -70,6 +78,9 @@
 		width: 347px;
 	}
 
+	.flex-item p:nth-child(2) {
+		width: 320px;
+	}
 	.first-image {
 		width: 295px;
 	}
